@@ -138,7 +138,7 @@ def _recon_lcs(x, y):
         else:
             return _recon(i, j - 1)
 
-    recon_tuple = tuple(map(lambda x: x[0], _recon(i, j)))
+    recon_tuple = tuple(map(lambda x: x, _recon(i, j)))
     return recon_tuple
 
 
